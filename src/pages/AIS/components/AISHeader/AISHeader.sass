@@ -1,0 +1,20 @@
+
+@import "../../../../assets/styles/_screen-size"
+.AISHeader
+    .BasicButton
+        font-size: .9rem
+        @media (max-width: 1280px)  and (min-width: 590px)
+            margin-left: 10px
+        @media (max-width: 590px)
+            margin-top: 10px
+    &__searchField
+        justify-content: flex-start
+        @include respond-to(xs)
+            display: inline-block
+            text-align: left
+            .search-field__input-container
+                width: 100%
+                margin-left: 0px
+                margin-top: 1rem
+            input
+                width: 100%

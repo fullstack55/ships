@@ -1,0 +1,93 @@
+.photographers__row
+  display: flex
+  font-family: "Montserrat", sans-serif
+  justify-content: center
+
+.photographer
+  width: 305px
+  box-sizing: border-box
+  height: 143px
+  border-radius: 20px
+  background-color: #ffffff
+  margin-right: 20px
+  margin-bottom: 20px
+  padding-left: 20px
+  @media (min-width: 1900px)
+    width: 285px
+  @media (max-width: 1280px)
+    width: 293px
+  @media (max-width: 960px)
+    width: 265px
+  @media (max-width: 590px)
+    width: 280px
+
+  &-header
+    display: flex
+    justify-content: space-between
+
+  &-stats
+    display: flex
+    margin-top: 20px
+    justify-content: space-between
+    margin-right: 35px
+
+    &-number
+      color: #3f5aa9
+      font-size: 16px
+      font-family: "Montserrat", sans-serif
+      font-weight: bold
+
+    &-name
+      color: #14222d
+      font-size: 12px
+      font-weight: 500
+      margin-top: 5px
+      font-family: "Montserrat", sans-serif
+
+
+  &-header__info
+    display: flex
+    margin-top: 25px
+
+  &-header__text
+    margin-left: 15px
+
+    &-name
+      color: #14222d
+      font-size: 16px
+      font-weight: 400
+      font-family: "Montserrat ExtraBold", sans-serif
+
+    &-location
+      color: #a2a7b8
+      font-size: 12px
+      font-weight: 500
+      font-family: "Montserrat", sans-serif
+
+  &-place__number
+    color: #222222
+    font-size: 16px
+    font-weight: 400
+    width: 28px
+    height: 29px
+    margin-right: 13px
+    box-sizing: border-box
+    border: 2px solid #f69722
+    background-color: #facd31
+    border-radius: 50%
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    transform-style: preserve-3d
+    font-family: "Montserrat ExtraBold", sans-serif
+
+    &:before
+      content: url("../../../../../assets/images/desktop/main/content/photographers/ribbon.png")
+      position: absolute
+      top: -4px
+      left: 50%
+      transform: translateZ(-1px) translateX(-50%)
+
+
+

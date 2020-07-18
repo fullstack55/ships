@@ -1,0 +1,29 @@
+@import "../../../../assets/styles/_screen-size"
+
+.Comments
+    h6
+        color: #5C7182
+        font-family: Montserrat
+        font-size: .9rem
+    &__footer
+        color: #3F5AA9 !important
+        cursor: pointer
+        font-style: italic
+        &:hover
+            text-decoration: underline
+    &__select
+        display: flex
+        align-items: center
+        justify-content: center
+        @include respond-to(xs)
+            display: grid !important
+            text-align: center
+            justify-items: center
+            justify-content: center
+            h6
+                margin-bottom: 1rem !important
+            .BasicSelect
+                width: 100%
+    &__box
+        @include respond-to(sm)
+            margin: 0px 1rem

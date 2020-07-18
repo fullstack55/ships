@@ -1,0 +1,302 @@
+.forum-container
+  display: flex
+  justify-content: center
+  align-items: center
+  max-width: 1280px
+  margin: 0 auto
+
+  &-login
+    margin-bottom: 35px
+
+.forum
+  max-width: 1280px
+
+  a
+    cursor: pointer
+
+  &-posts
+    margin-bottom: 30px
+    &-tip
+      display: flex
+      float: right
+      @media (max-width: 960px)
+        float: left
+      > span
+        display: flex
+        justify-content: center,
+        align-items: center
+        color: #7e859e
+        font-family: Montserrat
+        font-size: 11px
+        font-weight: 500
+        line-height: 26px
+        margin-right: 20px
+        img
+          margin-right: 10px
+
+  &-stats
+    box-shadow: 4px 7px 50px #f0f0f0
+    border-radius: 20px
+    border: 1px solid #d1daf5
+    background-color: #ffffff
+    padding: 30px
+    color: #5c7182
+    font-family: Montserrat
+    font-size: 14px
+    font-weight: 400
+    line-height: 26px
+    margin-bottom: 35px
+    a
+      color: #3f5aa9
+      font-family: Montserrat SemiBold
+      font-weight: 600
+      text-decoration: underline
+    strong
+      font-family: Montserrat SemiBold
+      font-weight: 600
+      color: #5c7182
+
+  &-users
+    box-shadow: 4px 7px 50px #f0f0f0
+    border-radius: 20px
+    border: 1px solid #d1daf5
+    background-color: #ffffff
+    margin-bottom: 65px
+    &-top
+      border-bottom: 1px solid #e8edf5
+      padding: 20px 30px
+      a
+        color: #3f5aa9
+        font-family: Montserrat
+        font-size: 14px
+        font-weight: 400
+        line-height: 26px
+        text-decoration: underline
+
+      &-title
+        color: #7e859e
+        font-family: Montserrat
+        font-size: 11px
+        font-weight: 500
+        line-height: 18px
+        margin: 20px 0
+
+      &-active
+        color: #3f5aa9
+        font-family: Montserrat SemiBold
+        font-size: 14px
+        font-weight: 400
+        line-height: 26px
+        text-decoration: underline
+        display: flex
+        flex-wrap: wrap
+        a
+          margin-right: 15px
+
+    &-bottom
+      padding: 20px 30px
+      color: #5c7182
+      font-family: Montserrat
+      font-size: 14px
+      font-weight: 400
+      line-height: 26px
+      strong
+        color: #14222d
+        font-family: Montserrat SemiBold
+        font-weight: 600
+
+  &-links
+    display: flex
+    :nth-child(1)
+      margin-right: 20px
+
+  &-link
+    color: #3f5aa9
+    font-family: Montserrat SemiBold Italic
+    font-size: 12px
+    font-weight: 400
+    line-height: 24px
+    text-decoration: underline
+    margin-bottom: 65px
+    display: block
+
+    &-col
+      display: inline-block
+
+  &-post
+    width: 1280px
+    min-height: 103px
+    box-shadow: 4px 7px 50px #f0f0f0
+    border-radius: 20px
+    border: 1px solid #d1daf5
+    background-color: #ffffff
+    display: flex
+    align-items: center
+    margin: -1px
+    @media (max-width: 1280px)
+      width: 100%
+    @media (max-width: 960px)
+      display: block
+
+    &-title
+      display: flex
+      align-items: center
+      border-right: 1px solid #d1daf5
+      height: 100%
+      padding: 0 30px
+      flex: 1 1 75%
+      @media (max-width: 1280px)
+        flex: 1 1 65%
+      @media (max-width: 960px)
+        border-right: none
+        width: 100%
+      @media (max-width: 590px)
+        display: block
+        text-align: center
+        padding: 10px 0
+
+      &-image
+        width: 60px
+        height: 60px
+        border-radius: 20px
+        background-color: #f3f6fc
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 20px
+        @media (max-width: 590px)
+          margin: 0 auto
+
+      &-text
+        :nth-child(1)
+          color: #3f5aa9
+          font-family: Montserrat SemiBold
+          font-size: 14px
+          font-weight: 400
+          line-height: 26px
+        :nth-child(2)
+          color: #5c7182
+          font-family: Montserrat
+          font-size: 12px
+          font-weight: 500
+          line-height: 18px
+      &-loadmore_btn
+        @media(min-width: 960px)
+          display: none !important
+
+    &-stats
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      color: #7e859e
+      font-family: Montserrat
+      font-size: 11px
+      font-weight: 500
+      line-height: 26px
+      border-right: 1px solid #d1daf5
+      height: 100%
+      padding: 0 30px
+      flex: 1 1 10%
+      @media (max-width: 1280px)
+        flex: 1 1 15%
+      @media (max-width: 960px)
+        display: none
+
+    &-meta
+      display: flex
+      align-items: center
+      flex-direction: column
+      color: #7e859e
+      font-family: Montserrat
+      font-size: 11px
+      font-weight: 500
+      line-height: 26px
+      line-height: 180%
+      padding: 0 20px
+      flex: 1 1 18%
+      @media (max-width: 1280px)
+        flex: 1 1 23%
+      @media (max-width: 960px)
+        display: none
+      a
+        color: #3f5aa9
+        font-family: Montserrat SemiBold
+        font-weight: 500
+        text-decoration: underline
+
+  &-recent-posts
+    margin-bottom: 65px
+    :last-child
+      border: none
+  &-recent-post
+    display: flex
+    align-items: center
+    padding: 10px 0
+    border-bottom: 1px solid #e8edf5
+    > div
+      display: flex
+      @media (max-width: 1280px)
+        display: block
+    @media (max-width: 590px)
+      display: block
+    :nth-child(1)
+      color: #3f5aa9
+      font-family: Montserrat SemiBold
+      font-size: 14px
+      font-weight: 400
+      line-height: 26px
+      margin-bottom: 0
+    :nth-child(3)
+      font-size: 14px
+      color: #3f5aa9
+      font-family: Montserrat
+      text-decoration: underline
+    :nth-child(5)
+      margin-left: auto
+      strong
+        font-family: Montserrat SemiBold
+        font-weight: 600
+        color: #5c7182
+    span
+      color: #5c7182
+      font-family: Montserrat
+      font-size: 14px
+      font-weight: 400
+      line-height: 26px
+    &-date
+      margin-left: auto
+
+
+.photos-wrapper__content
+  :first-child
+    @media (max-width: 960px)
+      > br
+        display: flex
+
+
+.forum_container
+  .page-title
+    > br
+      display: none
+  @media (max-width: 590px)
+    > div
+    :nth-child(1)
+      > br
+        display: flex
+  @media (max-width: 960px)
+    > div
+    :nth-child(3)
+      > br
+        display:  flex
+.page-title-tips
+  @media (max-width: 590px)
+    margin-bottom: 60px
+  > div
+    @media (max-width: 960px) and (min-width: 590px)
+      display: table-caption
+
+
+.forum_container .page-title .additional
+  @media (max-width: 960px) and (min-width: 590px)
+    margin-top: 20px

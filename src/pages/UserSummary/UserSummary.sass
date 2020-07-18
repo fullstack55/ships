@@ -1,0 +1,59 @@
+@import "../../assets/styles/_screen-size"
+.UserSummary
+    margin-left: 1rem
+    margin-right: 1rem
+    h5
+        font-family: Montserrat SemiBold, sans-serif
+        color: #3F5AA9
+    a
+        font-style: italic
+    .mainImage
+        margin-top: -5rem
+        @include respond-to(xs)
+            width: 100% !important
+            margin-bottom: 1rem
+
+    .paper
+        padding: 2rem
+    .photocollections
+        font-family: Montserrat SemiBold Italic, sans-serif
+    .BasicButton
+        font-family: Montserrat, sans-serif
+        font-size: 1rem
+    &__card
+        background-color: #7A97F8
+        height: 86px
+        padding-left: 20px
+
+        &:nth-child(3), &:nth-child(4)
+            margin-top: 10px
+
+        &:nth-child(n)
+            margin-top: 0
+
+        &:not(:last-child)
+            margin-bottom: 10px
+
+        &:first-child
+            background-color: rgb(28, 72, 203)
+
+        &:nth-child(2)
+            background-color: #6482E9
+
+        &:nth-child(3)
+            background-color: #7B97F9
+
+        &:last-child
+            background-color: #65A1E9
+
+        &-img
+            background-color: rgba(255, 255, 255, 0.2)
+            width: 45px
+            height: 45px
+            margin-right: 25px
+
+        &-value
+            color: #fff
+
+        &-label
+            color: rgba(255, 255, 255, 0.6)

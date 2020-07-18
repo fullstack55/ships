@@ -1,0 +1,26 @@
+.categories
+  display: flex
+  //flex-direction: column
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-top: 35px
+  width: 620px
+  @media (min-width: 1900px)
+    width: 590px
+  @media (max-width: 1280px)
+    width: 100%
+    justify-content: flex-start
+    margin-right: -20px
+  @media (max-width: 590px)
+    flex-direction: column
+    margin-right: 0
+
+
+.categories__row
+  display: flex
+
+.section__title-margin-top
+  @media (max-width: 960px)
+    margin-top: 40px
+
+

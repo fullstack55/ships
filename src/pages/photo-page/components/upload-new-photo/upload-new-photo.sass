@@ -1,0 +1,138 @@
+.new-upload
+  width: 1120px
+
+  @media (max-width: 1900px)
+    width: 710px
+
+  @media (max-width: 1280px)
+    width: 100%
+
+  & > .typography
+    margin-bottom: 32px
+
+  &__button
+    width: 170px
+    height: 36px
+    margin-top: 50px
+    margin-left: 40px
+
+  &__paper
+    padding: 30px 40px 40px
+    box-sizing: border-box
+    margin-bottom: 10px
+    background: #fff
+    display: flex
+    flex-direction: column
+
+    & > p
+      font-size: 18px
+      color: #1c48cb
+      font-family: Montserrat, sans-serif
+      font-weight: 600
+      text-align: left
+      width: 100%
+
+.select-item
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-direction: column
+
+  > p
+    font-size: 14px
+    font-family: Montserrat, sans-serif
+    color: #0f1e4f
+    font-weight: bold
+    font-style: italic
+    margin: 0 0 15px 0
+    display: block
+    text-align: left
+
+  > div
+    width: 100%
+
+.new-upload__paper
+  &__center-container
+    width: 100%
+    display: flex
+    justify-content: space-between
+
+    > div
+      width: 48%
+
+    &__right-block
+
+      &__paragraph
+        margin-bottom: 15px !important
+        font-size: 11px
+        line-height: 14px
+        color: #7e859e
+        font-family: Montserrat, sans-serif
+        font-weight: 500
+
+        > span
+          font-size: 11px
+          line-height: 24px
+          color: #1c48cb
+          font-family: Montserrat, sans-serif
+          font-weight: 500
+          font-style: italic
+
+      .checkbox
+        display: flex
+        width: 100%
+        margin-bottom: 15px
+        justify-content: flex-start
+      > *
+        margin-bottom: 36px
+
+
+    &__with-fields
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+
+      > *
+        margin-bottom: 30px
+        width: 100%
+        display: flex
+        justify-content: flex-start
+
+  &__bottom-container
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+
+    .text-area
+      margin-bottom: 25px
+
+    &__new-upload__button
+      margin: 15px 0 0 0
+
+
+.footer-text
+  background: #e8ecfa
+  padding: 20px 40px
+  border-radius: 10px
+  margin-top: 15px
+
+  > p
+    width: 1040px
+    margin: 0
+    font-size: 12px
+    line-height: 26px
+    color: #5c7182
+    font-family: "Montserrat", sans-serif
+    font-weight: 500
+
+.date-block
+  position: relative
+
+  > img
+    position: absolute
+    right: 25px
+    bottom: 18px
+    z-index: 1
+    cursor: pointer

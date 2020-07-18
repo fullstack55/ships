@@ -1,0 +1,49 @@
+.statistics
+  width: 1120px
+
+  @media (max-width: 1900px)
+    width: 710px
+
+  @media (max-width: 1280px)
+    width: 100%
+
+  &__container
+    &_top
+      display: flex
+      justify-content: space-between
+      margin-top: 20px
+
+    &_left
+      display: flex
+      flex-direction: column
+
+      & > div
+        height: 100%
+
+  &__link
+    margin-bottom: 30px
+    font-size: 18px
+
+  &__paper
+    padding: 33px 40px 33px
+    width: 553px
+    margin-bottom: 10px
+
+    &-bottom
+      width: 100%
+
+      &_link
+        margin-bottom: 20px
+
+      &_text
+        font-size: 12px
+        font-family: "Montserrat", sans-serif
+        color: rgb(20, 34, 45)
+        font-style: italic
+
+      &_line
+        position: absolute
+
+        &_bottom
+          position: absolute
+          bottom: 3px

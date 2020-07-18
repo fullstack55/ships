@@ -1,0 +1,65 @@
+.profile-sidebar
+  @media (max-width: 1280px)
+    display: flex
+    position: absolute
+    z-index: 100
+
+
+  &__not-toggled
+    &:after
+      content: url("../../../assets/images/mobile/summary/arrowIcon.png")
+      position: absolute
+      display: flex
+      align-items: center
+      justify-content: center
+      background: url("../../../assets/images/mobile/summary/arrowBG.png") 0 -1px no-repeat
+      top: 210px
+      left: 18px
+      height: 104px
+      width: 33px
+
+  &__toggled
+    &:after
+      content: url("../../../assets/images/mobile/summary/backArrowIcon.png")
+      left: -2px
+
+
+  &__closed
+    background: url("../../../assets/images/mobile/summary/menuBG .png") no-repeat
+    background-size: cover
+    width: 20px
+    height: 794px
+    position: relative
+
+    @media (min-width: 1280px)
+      display: none
+
+  &__opened
+    width: 0
+
+
+  &__desktop
+    width: 373px
+    height: 786px
+    display: flex
+
+    @media (max-width: 1900px)
+      width: 283px
+
+    @media (max-width: 1280px)
+      display: none
+
+  &__mobile
+    display: flex
+    border: 4px solid #0060CC
+    border-left-width: 0
+    border-top-right-radius: 50px
+    border-bottom-right-radius: 50px
+    box-sizing: border-box
+
+    @media (max-width: 1280px)
+      width: 378px
+
+    @media (max-width: 590px)
+      width: 305px
+

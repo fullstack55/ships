@@ -1,0 +1,39 @@
+.contact-form-container
+  max-width: 1280px
+  margin: 72px auto 150px auto
+
+  &-header
+    height: 89px
+    background: url("../../../assets/images/desktop/contact/form-header.png")
+    background-color: #0b2469
+    border-radius: 20px 20px 0 0
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #fefefe
+    font-size: 30px
+    &-first
+      font-family: Montserrat ExtraBold
+      font-weight: 700
+
+    &-last
+      font-family: Montserrat SemiBold
+      font-weight: 600
+
+  &-body
+    background: url("../../../assets/images/desktop/contact/form-body.png") no-repeat
+    background-position: left
+    box-shadow: 0 0 136px rgba(15, 26, 35, 0.2)
+    border-radius: 0 0 20px 20px
+    padding: 30px 40px
+    background-color: #fefefe
+    > div
+      margin: 20px 0
+    &-input, &-select
+      width: 30%
+      display: inline-block
+      margin: 0 20px
+    &-text-area
+      margin: 0 20px
+    :nth-child(3)
+      text-align: center

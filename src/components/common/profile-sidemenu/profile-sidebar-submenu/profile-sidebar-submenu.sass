@@ -1,0 +1,118 @@
+.profile-sidebar-submenu
+  border-bottom-right-radius: 50px
+  border-top-right-radius: 50px
+  width: 100%
+  box-shadow: 0 43px 100px 0 rgba(64, 118, 189, 0.48)
+  margin-bottom: 0px !important
+
+  @media (max-width: 1900px)
+    width: 197px
+
+  @media (max-width: 1280px)
+    width: 100%
+
+  @media (max-width: 1280px)
+    background-color: #fff
+
+  &__item
+    margin-bottom: 40px
+
+    &:first-child
+      margin-top: 55px
+
+  &__img
+    height: 20px
+    width: 18px
+    filter: brightness(0) invert(85%) sepia(15%) saturate(197%) hue-rotate(189deg) brightness(83%) contrast(88%)
+
+  &__text
+    display: block
+    margin-left: 30px
+
+    @media (max-width: 1900px)
+      margin-left: 18px
+
+  &__arrow-blue
+    border: solid rgb(28, 72, 203)
+    border-width: 0 1.5px 1.5px 0
+    display: inline-block
+    padding: 1.5px
+    margin-left: 6px
+    transform: rotate(45deg)
+
+  &__arrow
+    border: solid #a2a7b8
+    border-width: 0 1.5px 1.5px 0
+    display: inline-block
+    padding: 1.5px
+    margin-left: 6px
+    transform: rotate(45deg)
+
+  &__sub-text
+    display: block
+    margin-left: 14px
+
+    @media (max-width: 1900px)
+      margin-left: 14px
+
+  &__sub-link
+    font-size: 13px
+    font-family: "Montserrat", sans-serif
+    color: rgb(162, 167, 184)
+    font-weight: bold
+    text-decoration: none
+    margin-left: 46px
+    margin-top: 16px
+    display: flex
+    cursor: pointer
+    align-items: center
+    &_active
+      font-size: 13px
+      font-family: "Montserrat", sans-serif
+      color: rgb(15, 30, 79)
+      font-weight: bold
+      margin-left: 62px
+      position: relative
+      filter: brightness(0) invert(26%) sepia(36%) saturate(3317%) hue-rotate(213deg) brightness(97%) contrast(89%) !important
+
+      &:before
+        content: '•'
+        position: absolute
+        display: block
+        color: rgb(28, 72, 203)
+        font-size: 32px
+        line-height: 12px
+        top: 0
+        left: 0
+
+
+  &__link
+    font-size: 13px
+    font-family: "Montserrat", sans-serif
+    color: rgb(162, 167, 184)
+    font-weight: bold
+    text-decoration: none
+    margin-left: 30px
+    display: flex
+    cursor: pointer
+    align-items: center
+
+    &_active
+      font-size: 13px
+      font-family: "Montserrat", sans-serif
+      color: rgb(15, 30, 79)
+      font-weight: bold
+      position: relative
+      filter: brightness(0) invert(26%) sepia(36%) saturate(3317%) hue-rotate(213deg) brightness(97%) contrast(89%) !important
+
+      &:after
+        content: ""
+        position: absolute
+        display: block
+        background-color: rgb(28, 72, 203)
+        width: 4px
+        height: 28px
+        bottom: 50%
+        transform: translateY(50%)
+        right: 0
+        border-radius: 5px

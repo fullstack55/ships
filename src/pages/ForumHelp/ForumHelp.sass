@@ -1,0 +1,67 @@
+
+@import "../../assets/styles/_screen-size"
+.ForumHelp
+    &__Nav
+        font-size: .8rem
+        font-style: italic
+        color: #3F5AA9
+        cursor: pointer
+        font-family: Montserrat SemiBold
+        &:hover
+            text-decoration: underline
+        &__active
+            color: #E2820B
+    &__tab
+        display: flex
+        justify-content: center
+        overflow-x: hidden
+        h6
+            padding: 0px 1rem
+    &__content
+        img
+            @include respond-to(sm)
+                width: 100%
+
+        h4
+            font-size: 2rem
+            font-family: Montserrat
+            color: rgb(15, 33, 83)
+            strong
+                font-family: Montserrat Black
+
+        h6
+            font-size: .9rem
+            font-family: Montserrat
+            line-height: 1.3rem
+            color: #5C7182
+        span
+            color: black
+        ul
+            list-style: none
+            li
+                > h6
+                    display: inline
+        ul li::before
+            content: "\2022"
+            color: black
+            font-weight: bold
+            display: inline-block
+            width: 1em
+            margin-left: -1em
+
+.menu-item
+    padding: 0 40px
+    margin: 5px 10px
+    user-select: none
+    cursor: pointer
+    border: none
+
+    &-wrapper.active
+        border: 1px blue solid
+
+    &.active
+        border: 1px green solid
+
+.scroll-menu-arrow
+    padding: 20px
+    cursor: pointer

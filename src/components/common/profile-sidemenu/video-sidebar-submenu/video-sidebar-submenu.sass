@@ -1,0 +1,50 @@
+.profile-sidebar-menu
+  min-width: 85px
+  height: 100%
+  border-bottom-left-radius: 20px
+  border-top-left-radius: 20px
+  background-color: rgb(28, 72, 203)
+  text-align: center
+
+  @media (max-width: 1280px)
+    border-bottom-left-radius: 0
+    border-top-left-radius: 0
+
+  &__img
+    width: 20px
+    height: 20px
+
+  &__item
+    margin-top: 50px
+
+  &__link
+    text-decoration: none
+    font-size: 12px
+    font-family: "Montserrat", sans-serif
+    display: flex
+    flex-direction: column
+    align-items: center
+    filter: brightness(0) invert(82%) sepia(5%) saturate(1887%) hue-rotate(192deg) brightness(99%) contrast(92%)
+
+    &_active
+      filter: brightness(0) invert(1)
+      position: relative
+
+      &:after
+        content: ""
+        width: 15px
+        background-color: #ffffff
+        height: 30px
+        box-sizing: border-box
+        border-top-left-radius: 25px
+        border-bottom-left-radius: 25px
+
+        position: absolute
+        right: 0
+        top: 10px
+        transform: translateY(-50%)
+
+
+  &__text
+    margin-top: 15px
+

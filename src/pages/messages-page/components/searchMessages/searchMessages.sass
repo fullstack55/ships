@@ -1,0 +1,134 @@
+.search
+  width: 1120px
+
+  @media (max-width: 1900px)
+    width: 710px
+
+  @media (max-width: 1280px)
+    width: 100%
+
+  & > .typography
+    margin-bottom: 32px
+
+  &__button
+    width: 152px
+    height: 36px
+    margin-top: 50px
+    margin-left: 40px
+
+  &__paper
+    padding: 30px 40px 40px
+    box-sizing: border-box
+    margin-bottom: 10px
+    background: #fff
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    &__button
+      width: 152px
+      height: 36px
+      margin-top: 32px
+
+    &__inbox-container
+      margin-top: 40px
+      display: flex
+      justify-content: space-between
+
+.search__paper_inbox-title
+  font-size: 14px
+  line-height: 24px
+  color: #0f1e4f
+  font-family: Montserrat, sans-serif
+  font-weight: 600
+  font-style: italic
+
+.search__paper-container-top
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+
+.search__paper-container-left
+  display: flex
+  justify-content: space-around
+  align-items: center
+  flex-wrap: wrap
+  width: 50%
+  flex-direction: column
+
+  &__withChild
+    > div
+      > input
+        padding-left: 70px
+        padding-right: 0px
+
+  > div
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    flex-wrap: wrap
+    margin-bottom: 8px
+
+    > div
+      margin-bottom: 8px
+
+  .last-item
+    width: 100%
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+
+    > p
+      font-size: 14px
+      font-family: Montserrat, sans-serif
+      color: #0f1e4f
+      font-weight: bold
+      font-style: italic
+      margin: 0 0 15px 0
+      display: block
+      text-align: left
+
+    > div
+      width: 100%
+
+.search__paper-container-right
+  display: flex
+  justify-content: flex-start
+  align-items: flex-start
+  flex-wrap: wrap
+  width: 47%
+
+  > div:first-child
+    width: 100%
+    margin-bottom: 50px
+
+.search__paper-container-bottom
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  width: 100%
+
+  &__checkBlock
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-height: 50px
+    height: auto
+
+  .container-bottom__paragraph
+    font-size: 11px
+    line-height: 24px
+    color: #1c48cb
+    font-family: Montserrat, sans-serif
+    font-weight: 500
+    font-style: italic
+    text-align: start
+
+    &:after
+      content: "▼"
+      margin-left: 10px
+

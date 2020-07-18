@@ -1,0 +1,29 @@
+.footer
+  height: 100px
+  background-color: rgb(4, 9, 21)
+  font-size: 12px
+  font-family: "Montserrat", sans-serif
+  color: rgb(162, 167, 184)
+
+  @media (max-width: 960px)
+    padding-top: 60px
+    padding-bottom: 60px
+    box-sizing: border-box
+    height: fit-content
+
+  &__content
+    display: flex
+    align-items: center
+    height: 100px
+    flex: 0 0 33.33%
+    justify-content: space-between
+
+    @media (max-width: 960px)
+      flex-direction: column
+      height: 180px
+
+  &__terms
+    display: flex
+    width: 275px
+    justify-content: space-between
+

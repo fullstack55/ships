@@ -1,0 +1,105 @@
+.summery-photo
+  display: flex
+  flex-direction: column
+
+  &__title
+    margin-bottom: 45px
+    margin-top: 40px
+
+  & > img
+    align-self: flex-start
+    margin-left: 20px
+
+  &__image-row
+    margin: 20px 10px 0 20px
+    display: flex
+    flex-wrap: wrap
+
+    &__card
+      width: 510px
+      margin-bottom: 50px
+    &__image
+      position: relative
+      margin-right: 20px
+      width: 801px
+      margin-bottom: 50px
+      height: auto
+      &__like-container
+        position: absolute
+        bottom: 20px
+        right: 20px
+        font-family: "Montserrat Semibold",sans-serif
+        font-size: 14px
+        color: #FFA535
+        & > img
+          margin-right: 11px
+
+
+.summery-photo__card-general
+  font-size: 14px
+  &__margin-bottom
+    margin-bottom: 30px
+  &__text
+    color: #3f5aa9
+    font-family: "Montserrat Semibold",sans-serif
+    font-size: 14px
+    margin-top: 0
+    margin-bottom: 8px
+
+    & > span
+      color: #14222D
+  &__desc
+    margin-bottom: 30px
+    &__label
+      font-family: Montserrat,sans-serif
+      color: #7E859E
+      font-size: 14px
+      margin-top: 0
+      margin-bottom: 12px
+  &__flag
+    display: flex
+    margin-bottom: 22px
+    & > img
+      margin-right: 20px
+    & > p
+      font-family: "Montserrat Semibold",sans-serif
+      color: #14222D
+      font-size: 14px
+
+
+.summery-photo__card-general__label
+  font-size: 14px
+  margin-bottom: 8px
+  & > span:first-child
+    font-family: Montserrat,sans-serif
+    color: #7E859E
+  & > span:last-child
+    font-family: "Montserrat Semibold", sans-serif
+    color: #14222D
+  &__link
+    color: #3f5aa9 !important
+    text-decoration: underline
+
+.summery-photo__card-photo
+  margin-bottom: 30px
+  margin-top: 0
+  color: #3f5aa9
+  font-family: "Montserrat Semibold",sans-serif
+  font-size: 14px
+  & .summery-photo__card-general__label:first-child
+    margin-top: 6px
+  & > span
+    color: #14222D
+  &__desc-container
+    max-height: 144px
+    font-family: "Montserrat Semibold",sans-serif
+    font-size: 14px
+    color: #5C7182
+    & > p
+      margin: 0
+  &__desc-label
+    margin-top: 30px
+    margin-bottom: 15px
+    font-family: Montserrat,sans-serif
+    color: #7E859E
+    font-size: 14px

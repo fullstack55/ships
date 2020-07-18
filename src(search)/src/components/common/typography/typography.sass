@@ -1,0 +1,27 @@
+.typography
+  font-size: 1.5rem
+  color: rgb(15, 33, 83)
+
+  &__first
+    font-family: "Montserrat ExtraBold", sans-serif
+  >br
+    display: none
+
+  &__second
+    font-family: "Montserrat Semibold", sans-serif
+  &__subText
+    font-family: "Montserrat Semibold", sans-serif
+    font-size: 1rem
+
+  &_before
+    position: relative
+
+    &:before
+      content: ""
+      position: absolute
+      background-color: rgb(255, 165, 53)
+      width: 15px
+      height: 3px
+      left: -40px
+      top: 50%
+      transform: translateY(-50%)

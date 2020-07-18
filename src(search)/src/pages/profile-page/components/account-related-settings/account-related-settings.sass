@@ -1,0 +1,85 @@
+@import "../../../../assets/styles/_screen-size"
+.account-settings
+  width: 1120px
+
+  @media (max-width: 1900px)
+    width: 710px
+
+  @media (max-width: 1280px)
+    width: 100%
+
+  &__title
+    margin-bottom: 32px
+
+  &__paper
+    padding: 30px 40px 40px
+    box-sizing: border-box
+    margin-bottom: 10px
+    
+    @include respond-to(xs)
+      padding: 20px
+    
+    &__label
+      line-height: 24px
+      color: #0f1e4f
+      font-size: 14px
+      font-family: "Montserrat Semibold Italic", serif
+      margin-top: 28px
+      margin-bottom: 18px
+
+    &__username
+      font-family: "Montserrat Black", sans-serif
+      font-size: 24px
+      font-weight: 600
+      color: #14222d
+      margin-bottom: 32px
+      margin-top: 0
+
+    &__form
+      &__button
+        width: 152px
+        height: 36px
+
+      &__row
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+      &__row > div
+        width: 48%
+        min-width: 230px
+        margin-bottom: 26px
+        @media (max-width: 650px)
+          width: 100%
+
+      &__row > div .checkbox
+        justify-content: flex-start
+        margin-top: 16px
+      &__row > div > p
+        font-size: 11px
+        line-height: 14px
+        color: #7e859e
+        font-family: "Montserrat", serif
+        font-weight: 500
+        margin-top: 12px
+        margin-bottom: 0
+      &__row > div > p > span
+        font-size: 11px
+        line-height: 14px
+        color: #1c48cb
+        font-family: "Montserrat", serif
+        font-weight: 500
+        cursor: pointer
+
+
+  &__info
+    font-size: 12px
+    line-height: 26px
+    color: #5c7182
+    font-family: 'Montserrat', serif
+    font-weight: 500
+    border-radius: 20px
+    background-color: #e7ecf9
+    padding: 20px 40px
+    margin-bottom: 20px
+
+

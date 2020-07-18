@@ -1,0 +1,30 @@
+
+@import "../../../../../../assets/styles/_screen-size"
+.PersonalInfo
+    .input-field
+        min-width: auto
+    &__birthdate
+        input
+            width: 100% !important
+            @include respond-to(sm)
+                width: 100% !important
+                box-sizing: border-box
+                -webkit-box-sizing: border-box
+                -moz-box-sizing: border-box
+                box-sizing: border-box !important
+    h6
+        color: #666666
+        font-size: .7rem
+        font-family: Montserrat
+    // hr
+    //     margin-left: -40px
+    //     margin-right: -40px
+    &__special
+        color: #1C48CB !important
+        font-style: italic
+    &__paper
+        padding: 30px 40px 40px
+        box-sizing: border-box
+        margin-bottom: 10px
+        @include respond-to(xs)
+            padding: 20px !important

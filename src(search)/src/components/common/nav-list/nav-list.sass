@@ -1,0 +1,51 @@
+$arrow: "../../../assets/images/desktop/arrow.png"
+.nav-list
+  position: relative
+  &__label
+    font-family: "Montserrat Semibold", sans-serif
+    color: #ffffff
+    font-size: 14px
+    font-weight: 400
+    text-decoration: none
+    cursor: pointer
+    position: relative
+    &:after
+      content: url($arrow)
+      position: absolute
+      right: -18px
+      top: -1px
+  &__links-container
+    position: absolute
+    display: flex
+    flex-direction: column
+    top: 34px
+    padding: 21px 20px
+    background: #ffffff
+    border-radius: 10px
+    width: 144px
+    left: -60px
+    &:before
+      position: absolute
+      display: block
+      width: 14px
+      height: 14px
+      content: ''
+      top: -4px
+      left: 85px
+      transform: rotate(45deg)
+      background: #E9EDF8
+
+    &__link
+      color: #001925
+      font-size: 14px
+      font-family: "Montserrat Semibold", sans-serif
+      text-decoration: none
+      transition: 0.3s
+      margin-bottom: 11px
+      &:hover
+        color: #E8860D
+      &:last-child
+        margin-bottom: 0
+    &__link_active
+      color: #E8860D
+

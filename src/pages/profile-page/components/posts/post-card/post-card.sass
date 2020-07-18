@@ -1,0 +1,112 @@
+.post-card
+  margin-top: 12px
+  border-radius: 20px
+  border: 1px solid #d1daf5
+
+  &__heading
+    display: flex
+    align-items: center
+    background: #F3F6FD
+    padding: 20px 38px
+    border-top-left-radius: 20px
+    border-top-right-radius: 20px
+    .heading-shortLinks > div > span:first-child
+      margin-right: 7px
+      text-decoration: underline
+    .heading-shortLinks > div > span:last-child
+      text-decoration: underline
+      margin-left: 6px
+    .heading-shortLinks > div > span
+      font-family: "Montserrat", sans-serif
+      font-size: 12px
+      line-height: 26px
+      color: #7e859e
+
+    .heading-shortLinks > div
+      margin-bottom: 6px
+    .heading-shortLinks > a
+      color: #3f5aa9
+      border-bottom: 1px solid #3f5aa9
+      font-family: "Montserrat Semibold",serif
+  &__heading > span
+    margin-right: 34px
+    font-family: 'Montserrat Semibold',serif
+  &__body
+    padding: 20px 38px
+    font-family: 'Montserrat',serif
+    font-size: 14px
+    line-height: 20px
+    color: #5c7182
+    background: #FDFDFD
+  &__body > div > span:first-child,.post-card__body > div > span:last-child
+    font-family: 'Montserrat Semibold',serif
+    color: #14222d
+  &__body > div > span:nth-child(2)
+    color: #2f4ba4
+    border-bottom: 1px solid #2f4ba4
+    font-family: "Montserrat Semibold",serif
+    margin: 0 4px
+  &__body > div
+    margin-top: 10px
+    cursor: pointer
+
+  &__footer
+    padding: 20px 38px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    filter: drop-shadow(4px 6.928px 25px #f0f0f0)
+  &__footer > span
+    color: #7e859e
+    font-family: 'Montserrat',serif
+    font-size: 11px
+  &__footer > div > span
+    margin-right: 28px
+    font-family: 'Montserrat Semibold Italic',serif
+    font-size: 12px
+    line-height: 24px
+    color: #3f5aa9
+    text-decoration: underline
+    cursor: pointer
+  &__footer > div
+    display: flex
+    align-items: center
+  &__footer > div > span:first-child:before
+    content: ''
+    background: url("../../../../../assets/images/desktop/buddies/deleteIcon.png")
+    width: 17px
+    height: 17px
+    display: block
+    margin-right: 8px
+    margin-top: 4px
+    float: left
+
+  &__footer > div > span:nth-child(2):before
+    content: ''
+    background: url("../../../../../assets/images/desktop/profile/replyIcon.svg") no-repeat
+    width: 17px
+    height: 17px
+    display: block
+    margin-top: 4px
+    margin-right: 8px
+    float: left
+
+  &__footer > div > span:nth-child(3):before
+    content: ''
+    background: url("../../../../../assets/images/desktop/profile/quoteIcon.svg") no-repeat
+    width: 17px
+    height: 17px
+    display: block
+    margin-top: 4px
+    margin-right: 8px
+    float: left
+
+  &__footer > div > span:last-child:before
+    content: ''
+    background: url("../../../../../assets/images/desktop/profile/notifyIcon.svg") no-repeat
+    width: 17px
+    height: 17px
+    display: block
+    margin-top: 4px
+    margin-right: 8px
+    float: left

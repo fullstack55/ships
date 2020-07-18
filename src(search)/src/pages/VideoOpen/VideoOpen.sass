@@ -1,0 +1,52 @@
+@import "../../assets/styles/_screen-size"
+
+.VideoOpen
+    overflow-x: hidden
+    &__title
+        h1
+            padding-left: 1rem
+            padding-right: 1rem
+            text-align: center
+            @include respond-to(xs)
+                font-size: 1.8rem
+                text-align: center
+                padding-left: 1rem
+                padding-right: 1rem
+    &__tweet
+        background-color: #1da1f2 !important
+        font-size: .8rem !important
+        border-width: 0px !important
+        &:hover
+            border-width: 0px
+    .card
+        border-radius: 1rem
+        border-radius: 1rem
+        @include respond-to(md)
+            margin-left: 1rem
+            margin-right: 1rem
+        .card-header
+            border-top-left-radius: 1rem
+            border-top-right-radius: 1rem
+            background-color: #0B2469
+            .typography
+                margin-left: 20px
+                span
+                    color: white !important
+        .card-body
+            h6
+                font-family: Montserrat,sans-serif
+                color: #5C7182
+                font-size: .9rem
+            strong
+                color: black !important
+                font-family: Montserrat SemiBold
+    &__feedbackBox
+        @include respond-to(md)
+            display: flex
+            justify-content: space-between
+            margin-left: 1rem
+            margin-right: 1rem
+        @include respond-to(sm)
+            display: inline
+            .Feedback
+                margin-top: 1rem

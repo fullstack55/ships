@@ -1,0 +1,24 @@
+.information-item
+  display: flex
+  margin-bottom: 11px
+  white-space: nowrap
+  font-family: "Montserrat", sans-serif
+  font-size: 14px
+
+  @media (max-width: 590px)
+    flex-direction: column
+
+  &__title
+    color: rgb(126, 133, 158)
+
+  &__value
+    color: rgb(20, 34, 45)
+    font-weight: bold
+
+  &__line
+    border-bottom: 1px dotted rgb(126, 133, 158)
+    width: 100%
+    margin: 0 10px 3px
+
+    @media (max-width: 590px)
+      display: none

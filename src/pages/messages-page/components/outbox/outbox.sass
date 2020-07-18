@@ -1,0 +1,70 @@
+.outbox
+  width: 1120px
+
+  @media (max-width: 1900px)
+    width: 710px
+
+  @media (max-width: 1280px)
+    width: 100%
+
+  & > .typography
+    margin-bottom: 32px
+
+  &__button
+    width: 170px
+    height: 36px
+    margin-top: 50px
+    margin-left: 40px
+
+  &__paper
+    padding: 30px 40px 40px
+    box-sizing: border-box
+    margin-bottom: 10px
+    background: #fff
+    &__button
+      width: 170px
+      height: 36px
+      margin-top: 32px
+    &__inbox-container
+      margin-top: 40px
+      display: flex
+      justify-content: space-between
+      &__right-container
+        margin-right: 160px
+      &__right-container > p:last-child
+        margin-top: 24px
+        margin-bottom: 0
+        font-family: Montserrat,sans-serif
+        font-size: 14px
+        color: #3f5aa9
+      &__left-container
+        display: flex
+        &__subject-container > p:last-child
+          margin-top: 24px
+          margin-bottom: 0
+          font-family: "Montserrat Semibold",sans-serif
+          font-size: 14px
+          color: #3f5aa9
+        &__checkbox-container
+          margin-right: 64px
+          &__checkbox1, &__checkbox2
+            display: flex
+          &__checkbox1
+            margin-bottom: 24px
+          &__checkbox2 > p
+            margin: 0
+            font-family: 'Montserrat',sans-serif
+            font-size: 14px
+            color: #5c7182
+
+
+
+
+
+.outbox__paper_inbox-title
+  font-family: "Montserrat Semibold Italic",sans-serif
+  margin: 0
+
+.after-triangle
+  font-size: 16px
+

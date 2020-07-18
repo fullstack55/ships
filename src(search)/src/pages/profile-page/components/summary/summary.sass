@@ -1,0 +1,178 @@
+.summary
+  width: 1120px
+
+  @media (max-width: 1900px)
+    width: 710px
+
+  @media (max-width: 1280px)
+    width: 100%
+
+  &__cards
+    display: flex
+    justify-content: space-between
+    margin: 10px 0
+
+    @media (max-width: 1900px)
+      flex-wrap: wrap
+
+    @media (max-width: 590px)
+      flex-direction: column
+
+    &_photos
+      background-color: rgb(28, 72, 203) !important
+
+    &_active
+      background-color: rgb(101, 139, 255) !important
+
+  
+
+
+  &__text
+    &_s
+      font-size: 18px
+      margin-bottom: 30px
+      @media (max-width: 590px)
+        &:before
+          display: none
+
+
+  &__information-item
+    display: flex
+    margin-bottom: 11px
+
+    &_title
+      font-size: 14px
+      font-family: "Montserrat", sans-serif
+      color: rgb(126, 133, 158)
+      white-space: nowrap
+
+    &_value
+      font-size: 14px
+      font-family: "Montserrat", sans-serif
+      color: rgb(20, 34, 45)
+      font-weight: bold
+      white-space: nowrap
+
+  &__line
+    border-bottom: 1px dotted rgb(126, 133, 158)
+    width: 100%
+    margin: 0 10px 3px
+
+  &__greeting
+    box-sizing: border-box
+    height: 180px
+    position: relative
+    padding-left: 40px
+    padding-top: 35px
+    margin-top: 30px
+
+    @media (max-width: 960px)
+      text-align: center
+      height: 350px
+      padding-top: 200px
+      margin-top: 90px
+      padding-left: 0
+
+    &-welcome
+      font-size: 16px
+      font-family: "Montserrat", sans-serif
+      color: rgb(15, 30, 79)
+
+
+    &-name
+      font-size: 24px
+      font-family: "Montserrat", sans-serif
+      color: rgb(63, 90, 169)
+      font-weight: bold
+      margin-top: 2px
+
+      @media (max-width: 1900px) and (min-width: 960px)
+        width: 300px
+
+
+    &-faq
+      font-size: 12px
+      font-family: "Montserrat", sans-serif
+      color: rgb(58, 56, 63)
+      font-weight: bold
+      font-style: italic
+      text-transform: uppercase
+      margin-top: 25px
+
+    &:after
+      position: absolute
+      top: -65px
+      right: 45px
+      content: url("../../../../assets/images/desktop/summary/bgIcon.png")
+      width: 304px
+      display: block
+
+      @media (max-width: 960px)
+        left: 50%
+        transform: translateX(-50%)
+
+  &__papers
+    display: flex
+    justify-content: space-between
+
+    &_child
+      min-height: 275px
+      max-height: 275px
+
+      @media (max-width: 590px)
+        min-height: fit-content
+        max-height: fit-content
+
+      &:first-child
+        margin-bottom: 10px
+
+    @media (max-width: 1900px)
+      flex-direction: column
+
+    @media (max-width: 1280px)
+      flex-direction: row
+
+    @media (max-width: 960px)
+      flex-direction: column
+
+  &__link
+    text-decoration: none
+    font-size: 14px
+    font-family: "Montserrat Semibold", sans-serif
+    color: #5469AD
+
+  &__paper
+    padding: 33px 40px 0
+    flex-basis: 555px
+    position: relative
+
+    @media (max-width: 1280px)
+      flex-basis: calc(50% - 5px)
+
+    @media (max-width: 590px)
+      flex-basis: 100%
+      padding: 20px 40px 40px
+
+
+    &_2
+      width: 100%
+      margin-top: 10px
+      height: 125px
+      word-break: break-word
+
+      @media (max-width: 1900px)
+        height: 156px
+
+      @media (max-width: 590px)
+        height: 240px
+
+      &-text
+        font-size: 14px
+        font-family: "Montserrat", sans-serif
+        color: rgb(20, 34, 45)
+        font-weight: bold
+
+      &_title
+        margin-bottom: 23px
+
+

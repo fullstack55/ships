@@ -1,0 +1,58 @@
+.my-comments-table
+  width: 100%
+  border-collapse: collapse
+  &__body
+    td:first-child
+      padding-left: 40px
+    td:last-child
+      padding-right: 40px
+    td
+      padding: 15px 0
+      position: relative
+    td:last-child
+      > hr
+        right: 40px
+
+    tr
+      font-size: 14px
+      line-height: 26px
+      font-family: Montserrat, sans-serif
+      color: #5c7182
+      position: relative
+
+    tr:hover
+      background: #f3f6fc
+      .my-comments-table__body__name
+        text-decoration: underline
+
+    tr:last-child
+      td
+        .divider
+          display: none
+
+
+    &__name
+      font-size: 14px
+      color: #3f5aa9
+      font-family: "Montserrat Semibold",sans-serif
+
+    &__date
+      &__time
+        font-size: 11px
+        margin-left: 3px
+    &__comment
+      width: 330px
+
+
+    &__by
+      white-space: nowrap
+      max-width: 200px
+      padding-right: 10px !important
+      overflow: hidden
+      text-overflow: ellipsis
+
+
+.divider
+  position: absolute
+  width: 100%
+  bottom: 0

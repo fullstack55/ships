@@ -1,0 +1,111 @@
+.main__card
+  position: relative
+
+  &:first-child
+    margin-top: 0
+
+  @media (min-width: 590px) and (max-width: 960px)
+    margin-top: 58px
+  @media (max-width: 590px)
+    margin-top: 48px
+
+
+  &:last-child
+    margin-right: 0
+
+  &-image
+    @media (min-width: 1900px)
+      width: 612px
+    @media (max-width: 1280px)
+      width: 293px
+    @media (max-width: 960px)
+      width: 550px
+    @media (max-width: 590px)
+      width: 280px
+
+    &_selected
+      background-color: rgb(33, 33, 34)
+      opacity: 0.8
+
+    &-text
+      color: #ffffff
+      font-weight: 700
+      font-size: 14px
+      position: absolute
+      bottom: 20px
+      left: 19px
+      @media (min-width: 960px) and (max-width: 1280px)
+        display: none
+      @media (max-width: 590px)
+        display: none
+
+      &_small
+        font-size: 14px
+        font-family: "Montserrat", sans-serif
+
+    &-info
+      display: block
+      top: 100px
+      bottom: 0
+
+
+  &-button
+    color: #fff
+    font-family: "Montserrat Semibold Italic", sans-serif
+    font-size: 12px
+    text-decoration: underline
+    outline: none
+    display: none
+    position: absolute
+    bottom: 23px
+    left: 20px
+    @media (min-width: 960px) and (max-width: 1280px)
+      display: block
+    @media (max-width: 590px)
+          display: block
+
+.card-title
+  font-size: 24px
+  color: #0f2153
+  margin-bottom: 32px
+  position: relative
+  font-family: "Montserrat Semibold", sans-serif
+  font-weight: 400
+  margin-left: 45px
+  @media (min-width: 960px) and (max-width: 1280px)
+    margin-bottom: 22px
+    height: 49px
+    width: 170px
+  @media (max-width: 590px)
+    margin-bottom: 22px
+    height: 49px
+    width: 170px
+
+  &-1
+    font-weight: 700
+    font-family: "Montserrat ExtraBold", sans-serif
+
+    &:before
+      content: ""
+      display: inline-block
+      position: absolute
+      left: -40px
+      top: 12px
+      width: 25px
+      height: 3px
+      background-color: #ffa535
+
+.card__like
+  display: block
+  align-self: flex-end
+  font-size: 14px
+  font-family: "Montserrat", sans-serif
+  color: rgb(255, 165, 53)
+  position: absolute
+  bottom: 20px
+  right: 20px
+
+  &:after
+    content: url("../../../../assets/images/desktop/like.png")
+    position: absolute
+    left: -25px

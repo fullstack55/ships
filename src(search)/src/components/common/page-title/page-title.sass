@@ -1,0 +1,43 @@
+@import '../../../assets/styles/_screen-size'
+
+.page-title-container
+  display: flex
+  justify-content: center
+  h1
+    font-family: Montserrat, sans-serif
+    text-align: center
+    @include respond-to(md)
+      font-size: 1.8rem
+    
+    @include respond-to(xs)  
+      font-size: 2rem
+      text-align: center
+    strong
+      font-family: Montserrat ExtraBold, sans-serif
+    small
+      font-size: 1.3rem
+      margin-left: .5rem
+      color: #666666
+      @include respond-to(xs)
+        font-size: .8rem
+      
+  @include respond-to(xs)
+    display: inline
+.page-title
+  margin-bottom: 3rem
+  text-align: center
+  color: #14222d
+  font-family: Montserrat, sans-serif
+  font-size: 48px
+  font-weight: 400
+  text-transform: uppercase
+  
+  &__subText
+    font-size: 1.4rem
+    color: #666666
+
+  &.main
+    font-family: Montserrat ExtraBold, sans-serif
+    font-weight: 700
+    @include respond-to(lg)
+      margin-bottom: 1rem

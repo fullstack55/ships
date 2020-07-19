@@ -3,12 +3,16 @@
   border: 1px solid #d1daf5
   min-width: 345px
   height: 340px
+  @media (max-width: 590px)
+    min-width: 320px
   &__link-container
     padding: 30px 40px
     display: flex
     width: 345px
     box-sizing: border-box
     flex-direction: column
+    @media (max-width: 590px)
+      width: 320px
     & a > span
       margin-bottom: 21px
       color: #3F5AA9
@@ -26,6 +30,8 @@
     border-top-right-radius: 20px
     border-top-left-radius: 20px
     padding: 26px 40px
+    @media (max-width: 590px)
+      width: 320px
     &__typography
       font-size: 20px
       &:before

@@ -9,8 +9,8 @@ const Pagintation = ({totalPages}) => {
             <span>1</span>
             <span className={'pagination__selected'}>2</span>
             <span>3</span>
-            <span>4</span>
-            <span>5</span>
+            <span className="pagination__hidden">4</span>
+            <span className="pagination__hidden">5</span>
             ...
             <span>{totalPages}</span>
         </div>

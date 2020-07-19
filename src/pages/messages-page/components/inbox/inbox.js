@@ -45,7 +45,6 @@ const Inbox = () => {
                         date={'Feb 13 2020 (6 days ago)'}
                         subject={'(No subject)'}
                     />
-
                 </div>
                 <div className={'inbox__paper__footer'}>
                     <Button className={'outbox__paper__button'} variant={'secondary'}>Delete Selected</Button>

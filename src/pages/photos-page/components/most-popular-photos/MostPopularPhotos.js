@@ -25,7 +25,6 @@ const MostPopularPhotos = () => {
           </div>
           <div className='most-popular-photos__container__pagination-section'>
             <AdvancePagination totalPages={11134}/>
-            <p>Hint: The left/right arrows on your keyboard will take you to the previous/next page.</p>
           </div>
         </div>
         <main className='most-popular-photos__main'>

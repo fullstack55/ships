@@ -3,9 +3,10 @@ import Header from "../../components/header/header";
 import Footer from "../../components/common/footer/footer";
 import Title from "../../components/common/title/title";
 import Tabs from "../../components/common/tabs/tabs";
-import Pagination from "../../components/common/pagination/pagination";
+// import Pagination from "../../components/common/pagination/pagination";
 import NewsSearch from "./components/news-search";
 import NewsCard from "./components/news-card";
+import AdvancePagination from "../../components/common/advance-pagination/AdvancePagination";
 
 const NewsPage = () => {
   const [activeTab, setActiveTab] = useState("latest");
@@ -36,7 +37,7 @@ const NewsPage = () => {
       {activeTab === "latest" && (
         <>
           <NewsSearch />
-          <Pagination totalPages={11797} currentPage={2} />
+          <AdvancePagination totalPages={11797}/>
         </>
       )}
       <div className="container1">
@@ -50,7 +51,7 @@ const NewsPage = () => {
         </div>
       </div>
       {activeTab === "latest" && (
-        <Pagination totalPages={11797} currentPage={2} />
+        <AdvancePagination totalPages={11797}/>
       )}
       <Footer />
     </>

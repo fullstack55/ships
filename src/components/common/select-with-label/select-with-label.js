@@ -32,7 +32,7 @@ const Select = ({
           <option key={index} label={element.label} value={element.value} />
         ))}
       </select>
-      <span className="wrapper__arrow" />
+        <span className="wrapper__arrow" />
     </div>
   );
 };

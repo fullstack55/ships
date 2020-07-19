@@ -56,6 +56,8 @@
     justify-content: space-between
     align-items: center
     filter: drop-shadow(4px 6.928px 25px #f0f0f0)
+    @media (max-width: 960px)
+      display: block
   &__footer > span
     color: #7e859e
     font-family: 'Montserrat',serif
@@ -71,6 +73,8 @@
   &__footer > div
     display: flex
     align-items: center
+    @media (max-width: 590px)
+      display: grid
   &__footer > div > span:first-child:before
     content: ''
     background: url("../../../../../assets/images/desktop/buddies/deleteIcon.png")

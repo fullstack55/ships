@@ -1,11 +1,16 @@
 .buddies
-  width: 1120px
+  width: 100%
 
   &__container
     &_add
       display: flex
       align-items: flex-end
       margin-top: 30px
+      @media (max-width: 590px)
+        display: block
+        > .buddies__button
+          margin: 20px auto 0
+          display: block
 
   &__title
     margin-bottom: 30px
@@ -79,10 +84,14 @@
     padding: 30px 40px 40px
     box-sizing: border-box
     margin-bottom: 10px
+    > span
+      display: none
+    @media (min-width: 960px)
+      &__lists
+        .buddies__table__span
+          display: none
 
   &__button
-    width: 133px
-    height: 57px
     border-radius: 30px
 
   &__input

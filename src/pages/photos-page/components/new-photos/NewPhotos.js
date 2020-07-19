@@ -24,19 +24,18 @@ const NewPhotos = () => {
           <Select
             label='Limit:'
             options={[{value: '192/page', label: '192/page'}]}
-            className='custom-size col-md-3 col-sm-6 col-xm-12'
+            className='custom-size'
           />
           <Select
             label='View:'
             options={[{value: 'Normal', label: 'Normal'}]}
-            className='custom-size col-md-3 col-sm-6 col-xm-12'
+            className='custom-size'
           />
-          <Button variant={'outlined'} className='col-md-3 col-sm-6 col-xm-12'>Modify Search</Button>
-          <p  className='col-md-3 col-sm-6 col-xm-12'><span>11 345</span> photos found</p>
+          <Button variant={'outlined'}>Modify Search</Button>
+          <p><span>11 345</span> photos found</p>
         </Row>
         <div className='new-photos__pagination-block'>
           <AdvancePagination totalPages={11345}/>
-          <p>Hint: The left/right arrows on your keyboard will take you to the previous/next page.</p>
         </div>
         <main className='new-photos__main-block'>
           <Grid

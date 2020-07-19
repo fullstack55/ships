@@ -77,7 +77,7 @@ const RecentPost = () => (
 
 const Forum = () => {
   return (
-    <>
+    <div className="Shipspotting_forum">
       <Title boldText="SHIPSPOTTING" regularText="FORUM" />
       <div className="container1 forum-container">
         <CreateTicket
@@ -187,7 +187,7 @@ const Forum = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

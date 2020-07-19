@@ -1,35 +1,51 @@
 .pagination
-  display: flex
-  justify-content: flex-end
-  margin-top: 56px
-  font-family: 'Montserrat',serif
-  font-size: 14px
-  color: #5c7182
-  @media (max-width: 960px)
-    margin: 20px 0
-
-  > img
-    margin: 0 10px
-    cursor: pointer
-
-  .left-arrow
-    margin-right: 40px
-  .right-arrow
-    margin-left: 24px
-
-  & > span
-    margin-right: 16px
-    padding: 4px 8px
-    border-radius: 50%
-    cursor: pointer
-  & > span:last-child
-    margin-left: 16px
-  &__selected
-    background: #1c48cb
-    color: #FFF
-  &__hidden2
+  display: block !important
+  align-item: center
+  text-align: center
+  > div
+    display: flex
+    justify-content: center
+    margin-top: 56px
+    font-family: 'Montserrat',serif
+    font-size: 14px
+    color: #5c7182
     @media (max-width: 960px)
-      display: none
-  &__hidden1
-    @media (max-width: 590px)
+      margin: 20px 0
+
+    > img
+      margin: 0 10px
+      cursor: pointer
+
+    .left-arrow
+      margin-right: 40px
+    .right-arrow
+      margin-left: 24px
+
+    & > span
+      margin-right: 16px
+      padding: 4px 8px
+      border-radius: 50%
+      cursor: pointer
+    & > span:last-child
+      margin-left: 16px
+    &__selected
+      background: #1c48cb
+      color: #FFF
+    .hidden2
+      @media (max-width: 960px)
+        display: none
+    .hidden1
+      @media (max-width: 590px)
+        display: none
+
+  > p
+    font-size: 11px
+    line-height: 24px
+    color: #a2a7b8
+    font-weight: 500
+    font-style: italic
+    font-family: "Montserrat", sans-serif
+    margin-top: 20px
+    margin-bottom: 40px
+    @media (max-width: 960px)
       display: none

@@ -10,9 +10,9 @@ import fourthShip from "../../../../assets/images/desktop/statistics/fourthShip.
 import fifthShip from "../../../../assets/images/desktop/statistics/fifthShip.png";
 import likeIcon from "../../../../assets/images/desktop/statistics/likeIcon.png";
 import logoIcon from "../../../../assets/images/desktop/statistics/logoIcon.png";
-import shapeLine from "../../../../assets/images/desktop/statistics/shapeLine.svg";
+// import shapeLine from "../../../../assets/images/desktop/statistics/shapeLine.svg";
 import shape from "../../../../assets/images/desktop/statistics/shape.svg";
-import line from "../../../../assets/images/desktop/statistics/line.png";
+// import line from "../../../../assets/images/desktop/statistics/line.png";
 import "./statistics.sass";
 
 const Statistics = () => (
@@ -42,6 +42,43 @@ const Statistics = () => (
           <InformationItem title="Favourites on my photos:" value="569" />
           <InformationItem title="Comments:" value="11 568" />
         </Paper>
+      </div>
+      <div className="statistics__container_middle">
+        <Paper className="statistics__paper">
+          <Typography
+            firstText={"Most Popular Boards"}
+            secondText={"By Posts"}
+            className="statistics__link"
+            before={true}
+          />
+          <InformationItem title="Shipping News and information" value="122" />
+          <InformationItem title="Help and Advice" value="63" />
+          <InformationItem
+            title="Site related news, functions and modules"
+            value="61"
+          />
+          <InformationItem title="Trip reports" value="20" />
+        </Paper>
+        <Paper className="statistics__paper">
+          <Typography
+            firstText={"Most Popular Boards"}
+            secondText={"By Activity"}
+            className="statistics__link"
+            before={true}
+          />
+          <InformationItem
+            title="Shipping News and information"
+            value="1.8274%"
+          />
+          <InformationItem title="Help and Advice" value="1.5571%" />
+          <InformationItem
+            title="Site related news, functions and modules"
+            value="0.9775%"
+          />
+          <InformationItem title="Trip reports" value="0.9346%" />
+        </Paper>
+      </div>
+      <div className="statistics__container_photo">
         <Paper className="statistics__paper">
           <Typography
             firstText={"Most liked"}
@@ -80,41 +117,6 @@ const Statistics = () => (
             tooltipSrc={likeIcon}
           />
           <StatisticsImage imgSrc={logoIcon} alt={"ship"} />
-        </Paper>
-      </div>
-      <div>
-        <Paper className="statistics__paper">
-          <Typography
-            firstText={"Most Popular Boards"}
-            secondText={"By Posts"}
-            className="statistics__link"
-            before={true}
-          />
-          <InformationItem title="Shipping News and information" value="122" />
-          <InformationItem title="Help and Advice" value="63" />
-          <InformationItem
-            title="Site related news, functions and modules"
-            value="61"
-          />
-          <InformationItem title="Trip reports" value="20" />
-        </Paper>
-        <Paper className="statistics__paper">
-          <Typography
-            firstText={"Most Popular Boards"}
-            secondText={"By Activity"}
-            className="statistics__link"
-            before={true}
-          />
-          <InformationItem
-            title="Shipping News and information"
-            value="1.8274%"
-          />
-          <InformationItem title="Help and Advice" value="1.5571%" />
-          <InformationItem
-            title="Site related news, functions and modules"
-            value="0.9775%"
-          />
-          <InformationItem title="Trip reports" value="0.9346%" />
         </Paper>
         <Paper className="statistics__paper">
           <Typography
@@ -166,9 +168,9 @@ const Statistics = () => (
       />
       <div className="statistics__paper-bottom_text">Time of Day</div>
       <div className="statistics__activity">
-        <img className="statistics__paper-bottom_line" src={shapeLine} />
+        {/* <img className="statistics__paper-bottom_line" src={shapeLine} /> */}
         <img src={shape} />
-        <img className="statistics__paper-bottom_line_bottom" src={line} />
+        {/* <img className="statistics__paper-bottom_line_bottom" src={line} /> */}
       </div>
     </Paper>
   </div>

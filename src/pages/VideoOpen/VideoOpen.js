@@ -40,6 +40,7 @@ const VideoOpen = () => {
                 controls
                 width="95%"
                 height="648px"
+                className="player_setting"
               />
             </Col>
           </Row>

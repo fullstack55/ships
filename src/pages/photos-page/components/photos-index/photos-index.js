@@ -53,7 +53,7 @@ const PhotosIndex = () => {
           </div>
         </div>
       </div>
-      <div className={"photos-index__features-container"}>
+      <div className={"photos-index__features-container "}>
         <div>
           <div className={"photos-index__features-container__header"}>
             <div

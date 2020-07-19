@@ -76,12 +76,7 @@ const SearchPhoto = () => {
             <div>
               <Select
                 label="Flag:"
-                options={[
-                  {
-                    value: "Albania",
-                    label: "Albania",
-                  },
-                ]}
+                options={[{ value: "Albania", label: "Albania",}]}
               />{" "}
               <Select
                 label="Home port:"

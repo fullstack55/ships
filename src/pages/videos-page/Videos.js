@@ -24,10 +24,6 @@ const Videos = () => {
           </div>
           <div className="videos-main__container-header__pagination-section">
             <AdvancePagination totalPages={11134} />
-            <p>
-              Hint: The left/right arrows on your keyboard will take you to the
-              previous/next page.
-            </p>
           </div>
         </div>
 

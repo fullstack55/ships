@@ -13,7 +13,7 @@ import icon6 from "../../../../assets/images/desktop/forum/icon6.png";
 import "./MemberTable.sass";
 
 const MemberTable = () => {
-  const isMobile = useMediaQuery({ maxWidth: 590 });
+  const isMobile = useMediaQuery({ maxWidth: 960 });
   return (
     <Row className="MemberTable">
       <Col>

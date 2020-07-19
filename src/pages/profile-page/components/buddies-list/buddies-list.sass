@@ -21,9 +21,12 @@
     margin-top: 30px
 
     & tr
+      & th:first-child
+        width: 20%
+        text-align: left
       & td:last-child, & th:last-child
         text-align: center
-        width: 90px
+        width: 5%
 
     & tr:not(:first-child):not(:last-child)
       & td
@@ -35,8 +38,9 @@
       color: rgb(58, 56, 63)
       font-weight: bold
       font-style: italic
-      text-align: left
+      text-align: center
       padding-bottom: 15px
+      width: 10%
 
     & td
       font-size: 14px
@@ -45,6 +49,9 @@
       font-weight: bold
       padding-top: 15px
       padding-bottom: 20px
+      text-align: center
+    & td:first-child
+      text-align: left
 
 
   &__remove
@@ -81,7 +88,7 @@
     outline: none
 
   &__paper
-    padding: 30px 40px 40px
+    padding: 30px 30px 40px
     box-sizing: border-box
     margin-bottom: 10px
     > span

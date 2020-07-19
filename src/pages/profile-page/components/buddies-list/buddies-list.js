@@ -1,11 +1,15 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 import Typography from "../../../../components/common/typography/typography";
 import Paper from "../../../../components/common/paper/paper";
 import "./buddies-list.sass";
 import InputField from "../../../../components/common/input-field/input-field";
 import Button from "../../../../components/common/button/button";
+import BuddiesTable from "./component/buddies-table";
 
-const BuddiesList = () => (
+const BuddiesList = () => {
+  const isMobile = useMediaQuery({ maxWidth: 960 });
+  return(
   <div className="buddies">
     <Typography
       className="buddies__title"
@@ -23,7 +27,8 @@ const BuddiesList = () => (
     </Paper>
     <Paper className="buddies__paper">
       <Typography firstText="Edit" secondText="buddies" before />
-      <table className="buddies__table">
+      {!isMobile ? (
+        <table className="buddies__table">
         <tbody>
           <tr>
             <th>NAME</th>
@@ -85,8 +90,15 @@ const BuddiesList = () => (
           </tr>
         </tbody>
       </table>
+      ) : (
+        <>
+          <BuddiesTable name={"Clyde Dickens"} />
+          <BuddiesTable name={"Robert J Smith"} />
+          <BuddiesTable name={"Tomas Pinas"} />
+        </>
+      )}
     </Paper>
   </div>
-);
+  )};
 
 export default BuddiesList;

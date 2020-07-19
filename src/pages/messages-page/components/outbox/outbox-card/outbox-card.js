@@ -13,13 +13,15 @@ const OutboxCard = ({text, heading, subject, to, timeSent, actions, leftActions}
     return(
         <div className={'outbox-card'}>
             <div className={'outbox-card__heading'}>
-                <Checkbox />
-                <div className={'heading-shortLinks'}>
-                    <p>{heading}</p>
-                    <div>
-                        <span>Just popping in</span>
-                        <span>&#8226;</span>
-                        <span>Posts: 4</span>
+                <div className={'outbox-card__heading__header'}>
+                    <Checkbox />
+                    <div className={'heading-shortLinks'}>
+                        <p>{heading}</p>
+                        <div>
+                            <span>Just popping in</span>
+                            <span>&#8226;</span>
+                            <span>Posts: 4</span>
+                        </div>
                     </div>
                 </div>
                 <div className={'outbox-card__heading__drop-down'}>

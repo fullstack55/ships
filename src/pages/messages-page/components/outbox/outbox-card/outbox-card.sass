@@ -10,6 +10,10 @@
     padding: 20px 38px
     border-top-left-radius: 20px
     border-top-right-radius: 20px
+    @media (max-width: 960px)
+      display: block
+    &__header
+      display: flex
     &__drop-down
       margin-left: auto
       padding: 12px 50px 12px 22px
@@ -21,6 +25,8 @@
       font-family: "Montserrat Semibold",sans-serif
       font-size: 14px
       color: #14222d
+      white-space: nowrap
+      overflow: hidden
     &__drop-down > span
       position: absolute
       border: solid #000
@@ -105,9 +111,13 @@
     justify-content: space-between
     align-items: center
     filter: drop-shadow(4px 6.928px 25px #f0f0f0)
+    @media (max-width: 960px)
+      display: block
     &__left-actions
       display: flex
       align-items: center
+      @media (max-width: 960px)
+        display: grid
 
     &__left-actions > span
       margin-right: 28px
@@ -142,6 +152,8 @@
     &__actions
       display: flex
       align-items: center
+      @media (max-width: 960px)
+        display: grid
     &__actions > span
       margin-right: 28px
       font-family: 'Montserrat Semibold Italic',serif

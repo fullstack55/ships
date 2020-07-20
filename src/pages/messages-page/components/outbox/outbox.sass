@@ -21,6 +21,7 @@
     box-sizing: border-box
     margin-bottom: 10px
     background: #fff
+
     &__button
       width: 170px
       height: 36px
@@ -29,6 +30,13 @@
       margin-top: 40px
       display: flex
       justify-content: space-between
+      @media (max-width: 960px)
+        display: grid
+      .inbox__table
+        padding: 0
+      .inbox__paper__grid__select-all
+        display: flex
+        padding: 0
       &__right-container
         margin-right: 160px
       &__right-container > p:last-child

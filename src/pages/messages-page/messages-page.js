@@ -18,7 +18,7 @@ const MessagesPage = () => {
   scrollToTop();
 
   return (
-    <div>
+    <div className="container2">
       <div className="messages__header">
         <div className="container1">
           <HeaderTop />

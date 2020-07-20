@@ -34,39 +34,38 @@ const SearchMessages = () => {
       <Paper className={'search__paper'}>
         <div className={'search__paper-container-top'}>
           <div className={'search__paper-container-left'}>
-
-            <div>
-              <InputField label={'Search for:'}/>
-              <Select options={[{value:'Match any words', label:'Match any words'}]}/>
+            <div className="search_for_user">
+                <InputField label={'Search for:'}/>
+                <Select options={[{value:'Match any words', label:'Match any words'}]}/>
+                <InputField label={'by user:'}/>
             </div>
 
-            <div className={'search__paper-container-left__withChild'}>
-              <InputField label={'Age:'} firstChild={'Between'}/>
-              <InputField firstChild={'and'} lastChild={'days'}/>
+            <div className="search_for_user">
+              {/* <div className={'search__paper-container-left__withChild'}> */}
+                <InputField label={'Age:'} firstChild={'Between'}/>
+                <InputField firstChild={'and'} lastChild={'days'}/>
+              {/* </div> */}
+
+              <div className={'search__paper-right-check'}>
+                <Checkbox
+                  onChange={handleCheckBox}
+                  name={'showFull'}
+                  checked={checkBoxes.showFull}
+                  label={'Show full message in results.'}
+                />
+                <Checkbox
+                  onChange={handleCheckBox}
+                  name={'searchBy'}
+                  checked={checkBoxes.searchBy}
+                  label={'Search by subject and author only.'}
+                />
+              </div>
             </div>
 
             <div className={'last-item'}>
               <p>Order results by</p>
               <Select options={[{value:'Most recent first', label:'Most recent first'}]}/>
             </div>
-          </div>
-
-          <div className={'search__paper-container-right'}>
-            <div>
-              <InputField label={'by user:'}/>
-            </div>
-            <Checkbox
-              onChange={handleCheckBox}
-              name={'showFull'}
-              checked={checkBoxes.showFull}
-              label={'Show full message in results.'}
-            />
-            <Checkbox
-              onChange={handleCheckBox}
-              name={'searchBy'}
-              checked={checkBoxes.searchBy}
-              label={'Search by subject and author only.'}
-            />
           </div>
         </div>
 
@@ -76,30 +75,34 @@ const SearchMessages = () => {
             <p className={'container-bottom__paragraph'}>Choose labels to search by, or search all</p>
           </div>
           <div className={'search__paper-container-bottom__checkBlock'}>
-            <Checkbox
-              onChange={handleCheckBox}
-              name={'test'}
-              checked={checkBoxes.test}
-              label={'test'}
-            />
-            <Checkbox
-              onChange={handleCheckBox}
-              name={'anotherTest'}
-              checked={checkBoxes.anotherTest}
-              label={'another text'}
-            />
-            <Checkbox
-              onChange={handleCheckBox}
-              name={'design'}
-              checked={checkBoxes.design}
-              label={'design test 1'}
-            />
-            <Checkbox
-              onChange={handleCheckBox}
-              name={'inbox'}
-              checked={checkBoxes.inbox}
-              label={'Inbox'}
-            />
+            <div>
+              <Checkbox
+                onChange={handleCheckBox}
+                name={'test'}
+                checked={checkBoxes.test}
+                label={'test'}
+              />
+              <Checkbox
+                onChange={handleCheckBox}
+                name={'anotherTest'}
+                checked={checkBoxes.anotherTest}
+                label={'another text'}
+              />
+            </div>
+            <div>
+              <Checkbox
+                onChange={handleCheckBox}
+                name={'design'}
+                checked={checkBoxes.design}
+                label={'design test 1'}
+              />
+              <Checkbox
+                onChange={handleCheckBox}
+                name={'inbox'}
+                checked={checkBoxes.inbox}
+                label={'Inbox'}
+              />
+            </div>
             <Checkbox
               onChange={handleCheckBox}
               name={'checkAll'}
@@ -110,8 +113,9 @@ const SearchMessages = () => {
           <div></div>
         </div>
 
-
-        <Button className={'search__paper__button'} variant={'secondary'}>Search</Button>
+        <div>
+          <Button className={'search__paper__button'} variant={'secondary'}>Search</Button>
+        </div>
       </Paper>
     </div>
   )

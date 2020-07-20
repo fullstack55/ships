@@ -7,8 +7,12 @@ import InboxRow from "./inbox-row/inbox-row";
 import Button from "../../../../components/common/button/button";
 import Pagintation from "../../../profile-page/components/posts/pagination/pagination";
 import OutboxCard from "../outbox/outbox-card/outbox-card";
+import { useMediaQuery } from "react-responsive";
+import InboxTable from "./component/inbox-table";
+import Checkbox from "../../../../components/common/checkbox/checkbox";
 
 const Inbox = () => {
+    const isMobile = useMediaQuery({ maxWidth: 960 });
     return (
         <div className={'inbox'}>
             <Typography firstText={'Inbox'} secondText={'Messages'} />
@@ -24,27 +28,59 @@ const Inbox = () => {
                     </div>
                 </div>
                 <div className={'inbox__paper__grid'}>
-                    <InboxRow heading from='-' date={'-'} subject={'-'}/>
-                    <InboxRow
-                        from='José Ricardo Rodriguez Montero'
-                        date={'Feb 13 2020 (6 days ago)'}
-                        subject={'(No subject)'}
-                    />
-                    <InboxRow
-                        from='José Ricardo Rodriguez Montero'
-                        date={'Feb 13 2020 (6 days ago)'}
-                        subject={'don\'t worry about this'}
-                    />
-                    <InboxRow
-                        from='José Ricardo Rodriguez Montero'
-                        date={'Feb 13 2020 (6 days ago)'}
-                        subject={'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'}
-                    />
-                    <InboxRow
-                        from='José Ricardo Rodriguez Montero'
-                        date={'Feb 13 2020 (6 days ago)'}
-                        subject={'(No subject)'}
-                    />
+                    {!isMobile ? (
+                        <>
+                            <InboxRow heading from='-' date={'-'} subject={'-'}/>
+                            <InboxRow
+                                from='José Ricardo Rodriguez Montero'
+                                date={'Feb 13 2020 (6 days ago)'}
+                                subject={'(No subject)'}
+                            />
+                            <InboxRow
+                                from='José Ricardo Rodriguez Montero'
+                                date={'Feb 13 2020 (6 days ago)'}
+                                subject={'don\'t worry about this'}
+                            />
+                            <InboxRow
+                                from='José Ricardo Rodriguez Montero'
+                                date={'Feb 13 2020 (6 days ago)'}
+                                subject={'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'}
+                            />
+                            <InboxRow
+                                from='José Ricardo Rodriguez Montero'
+                                date={'Feb 13 2020 (6 days ago)'}
+                                subject={'(No subject)'}
+                            />
+                        </>
+                    ) : (
+                        <>
+                            <p className="inbox__paper__grid__select-all"><Checkbox /> Select All</p>
+                            <InboxTable
+                                date={'Feb 13 2020 (6 days ago)'}
+                                subject={'(No subject)'}
+                                states={'FROM'}
+                                emaildata='José Ricardo Rodriguez Montero'
+                            />
+                            <InboxTable
+                                date={'Feb 13 2020 (6 days ago)'}
+                                subject={'don\'t worry about this'}
+                                states={'FROM'}
+                                emaildata={'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'}
+                            />
+                            <InboxTable
+                                date={'Feb 13 2020 (6 days ago)'}
+                                subject={'(No subject)'}
+                                states={'FROM'}
+                                emaildata='José Ricardo Rodriguez Montero'
+                            />
+                            <InboxTable
+                                date={'Feb 13 2020 (6 days ago)'}
+                                subject={'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'}
+                                states={'FROM'}
+                                emaildata='José Ricardo Rodriguez Montero'
+                            />
+                        </>
+                    )}
                 </div>
                 <div className={'inbox__paper__footer'}>
                     <Button className={'outbox__paper__button'} variant={'secondary'}>Delete Selected</Button>

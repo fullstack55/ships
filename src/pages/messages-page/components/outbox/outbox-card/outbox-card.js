@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import PropTypes from "prop-types";
 import './outbox-card.sass'
-import Checkbox from "../../../../../components/common/checkbox/checkbox";
 
 const OutboxCard = ({text, heading, subject, to, timeSent, actions, leftActions}) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +13,7 @@ const OutboxCard = ({text, heading, subject, to, timeSent, actions, leftActions}
         <div className={'outbox-card'}>
             <div className={'outbox-card__heading'}>
                 <div className={'outbox-card__heading__header'}>
-                    <Checkbox />
+                    {/* <Checkbox /> */}
                     <div className={'heading-shortLinks'}>
                         <p>{heading}</p>
                         <div>

@@ -25,6 +25,8 @@
     flex-direction: column
     align-items: center
     justify-content: center
+    @media (max-width: 590px)
+      padding: 30px 10px
 
     &__button
       width: 152px
@@ -55,7 +57,7 @@
   justify-content: space-around
   align-items: center
   flex-wrap: wrap
-  width: 50%
+  width: 100%
   flex-direction: column
 
   &__withChild
@@ -64,16 +66,26 @@
         padding-left: 70px
         padding-right: 0px
 
-  > div
+  > .search_for_user
     width: 100%
     display: flex
     justify-content: space-between
     align-items: flex-end
     flex-wrap: wrap
-    margin-bottom: 8px
+    //margin-bottom: 8px
 
     > div
       margin-bottom: 8px
+    > div:first-child
+      display: flex
+    @media (max-width: 590px)
+      .wrapper
+        width: 100%
+    > div:last-child
+      @media (max-width: 960px)
+        width: 100%
+      @media (min-width: 1280px)
+        width: 100%
 
   .last-item
     width: 100%
@@ -118,6 +130,14 @@
     align-items: center
     min-height: 50px
     height: auto
+    flex-wrap: wrap
+    
+    > div:not(last-child)
+      display: block
+      .checkbox
+        justify-content: left
+        > label
+          margin: 0
 
   .container-bottom__paragraph
     font-size: 11px
@@ -132,3 +152,9 @@
       content: "▼"
       margin-left: 10px
 
+.search__paper-right-check
+  width: 240px
+  > div
+    justify-content: left
+    .checkbox__label
+      margin: 0

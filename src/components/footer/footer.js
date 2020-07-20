@@ -3,7 +3,7 @@ import Photos from "./photos/photos";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer">
       <Photos />
     </footer>
   );

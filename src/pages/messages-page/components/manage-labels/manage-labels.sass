@@ -15,14 +15,21 @@
     box-sizing: border-box
     margin-bottom: 10px
     background: #fff
+    @media (max-width: 590px)
+      padding: 30px 10px
     &__checkbox
       justify-content: flex-start
       margin-top: 8px
       margin-left: 2px
+      .checkbox__label
+        margin: 0
     &__button-container
       margin-top: 30px
       display: flex
       align-items: center
+      @media (max-width: 590px)
+        display: grid
+
       & > button:first-child
         width: 80px
         height: 36px
@@ -31,6 +38,8 @@
       & > button:last-child
         text-transform: capitalize
         margin-top: 0
+        @media (max-width: 590px)
+          margin-top: 20px
 
     &__label-container
       display: flex
@@ -42,6 +51,10 @@
       display: flex
       align-items: flex-end
       margin-top: 28px
+      @media (max-width: 960px)
+        display: block
+        &__button
+          margin: 20px 0 0 0
       &__input
         width: 100%
 

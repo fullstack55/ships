@@ -5,10 +5,12 @@ import Typography from "../../../../components/common/typography/typography";
 import Paper from "../../../../components/common/paper/paper";
 import UploadedTable from "../../../../components/common/table/uploadedTable/UploadedTable";
 import Pagintation from "../../../profile-page/components/posts/pagination/pagination";
-
+import Upload_Table from "./component/upload-table";
+import { useMediaQuery } from "react-responsive";
 
 const Uploaded = ({media}) => {
-  // eslint-disable-next-line no-unused-vars
+    const isMobile = useMediaQuery({ maxWidth: 960 });
+    // eslint-disable-next-line no-unused-vars
   const [tableParameters, setTableParameters] = useState({
     headers: [`${media.match(/photo|video/)} name`, 'IMO', 'location', 'upload date', 'edit'],
     body: [
@@ -46,7 +48,30 @@ const Uploaded = ({media}) => {
         <p>You have uploaded <span>({tableParameters.body.length})</span> {media}</p>
       </div>
       <Paper className={'uploaded__paper'}>
+      {!isMobile ? (
         <UploadedTable tableParameters={tableParameters}/>
+      ) : (
+        <>
+          <Upload_Table 
+            photoName='TEST FOR NEW SITE'
+            imo='9527764'
+            location='Le Treport, Normandy, France'
+            uploadDate='Feb 13, 2020 (6 days ago)'
+          />
+          <Upload_Table 
+            photoName='TEST FOR NEW SITE'
+            imo='9527764'
+            location='Le Treport, Normandy, France'
+            uploadDate='Feb 13, 2020 (6 days ago)'
+          />
+          <Upload_Table 
+            photoName='TEST FOR NEW SITE'
+            imo='9527764'
+            location='Le Treport, Normandy, France'
+            uploadDate='Feb 13, 2020 (6 days ago)'
+          />
+        </>
+      )}
         <Pagintation totalPages={1132} />
       </Paper>
     </div>

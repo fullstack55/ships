@@ -44,12 +44,12 @@ const NewMessage = () => {
                         <p>please enter the code in the image above to send this pm.</p>
                     </div>
                 </div>
-                <div className={'new-message__paper__styles-container'}>
+                {/* <div className={'new-message__paper__styles-container'}> */}
                     <Select options={[{value:'Change color', label:'Change color'}]} />
                     <div className={'new-message__paper__styles-container__styles'}>
                         <FontStyles />
                     </div>
-                </div>
+                {/* </div> */}
                 <img className={'new-message__paper__smiles'} src={Smiles} alt="smiles"/>
                 <TextArea />
                 <div className={'new-message__paper__button-container'}>

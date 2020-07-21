@@ -23,6 +23,8 @@
     background: #fff
     display: flex
     flex-direction: column
+    @media (max-width: 590px)
+      padding: 30px 10px
 
     & > p
       font-size: 18px
@@ -56,10 +58,15 @@
     width: 100%
     display: flex
     justify-content: space-between
+    @media (max-width: 960px)
+      display: block
 
     > div
       width: 48%
-
+      @media (max-width: 960px)
+      width: 100%
+    .checkbox__label
+      margin: 0
     &__right-block
 
       &__paragraph
@@ -77,14 +84,15 @@
           font-family: Montserrat, sans-serif
           font-weight: 500
           font-style: italic
-
+      .input-field__hint
+        bottom: -36px
       .checkbox
         display: flex
         width: 100%
         margin-bottom: 15px
         justify-content: flex-start
       > *
-        margin-bottom: 36px
+        margin-bottom: 46px
 
 
     &__with-fields
@@ -104,13 +112,13 @@
     flex-direction: column
     justify-content: flex-start
     align-items: flex-start
-
+    > div
+      width: 100%
     .text-area
       margin-bottom: 25px
 
     &__new-upload__button
       margin: 15px 0 0 0
-
 
 .footer-text
   background: #e8ecfa
@@ -119,7 +127,6 @@
   margin-top: 15px
 
   > p
-    width: 1040px
     margin: 0
     font-size: 12px
     line-height: 26px

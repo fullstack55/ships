@@ -15,17 +15,25 @@
     box-sizing: border-box
     margin-bottom: 10px
     background: #fff
+    @media (max-width: 590px)
+      padding: 30px 10px
 
     &__checkbox
       justify-content: flex-start
       & > label
-        font-style: normal
+        font-style: normal 
+      .checkbox__label
+        margin: 0
 
     &__button-container
       display: flex
       align-items: center
       margin-top: 28px
       margin-bottom: 28px
+      @media (max-width: 590px)
+        display: block
+        > button:last-child
+          margin-top: 30px
 
       &__button1
         text-transform: none
@@ -42,13 +50,15 @@
     &__smiles
       margin-top: 10px
       margin-bottom: 19px
+      @media (max-width: 590px)
+        width: 100%
 
     &__styles-container
       display: flex
       align-items: center
       justify-content: space-between
       &__styles
-        margin-left: 39px
+        margin-top: 30px
       & > .wrapper
         width: 82%
 
@@ -57,14 +67,23 @@
       align-items: flex-end
       margin-top: 20px
       margin-bottom: 20px
+      @media (max-width: 590px)
+        display: block
 
       &__left-part
         margin-right: 19px
+        min-width: 200px
+        @media (max-width: 590px)
+          margin-right: 0
         & > div
           border: 1px solid #cccccc
           border-radius: 10px
           box-sizing: border-box
-          padding: 11px 0px
+          padding: 11px 20px
+          @media (max-width: 590px)
+            padding: 11px 40px
+            width: 240px
+
 
         &__label
           font-size: 14px
@@ -80,6 +99,8 @@
           margin-top: 14px
 
       &__right-part
+        @media (max-width: 690px) and (min-width: 590px)
+          margin-bottom: -18px
         & > p
           margin-bottom: 0
           margin-top: 15px
@@ -98,11 +119,17 @@
         width: 48%
         min-width: 300px
         margin-bottom: 20px
+        @media (max-width: 590px)
+          min-width: 200px
+          width: 100%
 
       &__right-container
         width: 48%
         min-width: 300px
         margin-bottom: 20px
+        @media (max-width: 590px)
+          min-width: 200px
+          width: 100%
         & > p
           margin-bottom: 0
           font-family: Montserrat,sans-serif

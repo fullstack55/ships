@@ -6,16 +6,16 @@
         display: flex
         justify-content: space-between
         margin: 0px 1rem
-        @include respond-to(sm)
+        @media (max-width: 960px)
             flex-flow: row wrap
             justify-content: flex-start
     &__tab
         display: flex
         align-items: start
-        @include respond-to(md)
+        @media (max-width: 1280px)
             display: inline
             max-width: 4rem
-        @include respond-to(sm)
+        @media (max-width: 960px)
             display: flex
             justify-content: flex-start
             min-width: 11rem
@@ -27,21 +27,21 @@
             font-family: Montserrat Medium, sans-serif
             font-size: .8rem
             color: #7E859E
-            @include respond-to(md)
+            @media (max-width: 1280px)
                 margin-top: 1rem
-            @include respond-to(sm)
+            @media (max-width: 960px)
                 margin-top: 0
                 margin-left: 1rem
     &__cardHeaderBlock
-        @include respond-to(xs)
+        @media (max-width: 590px)
             display: block !important
-        @include respond-to(sm)
+        @media (max-width: 960px)
             display: flex
             justify-content: space-between
             > div
                 display: flex
                 align-items: center
-                @include respond-to(xs)
+                @media (max-width: 590px)
                     display: block
     &__mobileBox
         border-bottom: 1px solid rgba(#666666, .2)
@@ -55,7 +55,7 @@
             padding-left: .3rem
             padding-right: .3rem
             background-color: #05D01D
-        @include respond-to(sm)
+        @media (max-width: 960px)
             display: flex
             align-items: center
             justify-content: space-between
@@ -65,7 +65,7 @@
                 margin-top: 1rem
                 color: #5C7182
                 font-size: .9rem
-                @include respond-to(xs)
+                @media (max-width: 590px)
                     display: block
                     margin-top: 1rem
 
@@ -84,7 +84,7 @@
                 display: flex
                 align-items: flex-start
                 font-size: .9rem
-                @include respond-to(xs)
+                @media (max-width: 590px)
                     margin-top: .5rem
                 img
                     margin-right: .5rem

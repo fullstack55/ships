@@ -16,6 +16,7 @@ import PersonalMessageOptions from "./components/personal-message-options/person
 import ForumProfile from "./components/ForumProfile";
 import Preferences from "./components/Preferences";
 import Notifications from "./components/Notifications";
+import Navbar from "../../components/header/navbar/navbar";
 
 const ProfilePage = () => {
   scrollToTop();
@@ -25,6 +26,7 @@ const ProfilePage = () => {
       <div className="profile__header">
         <div className="container1">
           <HeaderTop />
+          <Navbar className="header__navbar_hidden" />
         </div>
       </div>
       <div className="container1 profile__container">

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "./navbar/navbar";
 import "./header.sass";
 import Tabs from "./tabs/tabs";
@@ -8,11 +8,14 @@ import Search from "./search/search";
 import HeaderTop from "../common/header-top/header-top";
 
 const Header = ({ info = true }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+
   return (
     <header className="header">
       <div className="container1">
-        <HeaderTop />
-        <Navbar className="header__navbar_hidden" />
+        <HeaderTop open={() => setMenuOpen(true)}/>
+        <Navbar className={ menuOpen ? "header__navbar_show" : "header__navbar_hidden"}  close={() => setMenuOpen(false)} />
         {info && (
           <div className="header__info">
             <div className="header__info-1">

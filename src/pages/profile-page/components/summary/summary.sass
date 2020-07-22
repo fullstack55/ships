@@ -23,7 +23,56 @@
 
     &_active
       background-color: rgb(101, 139, 255) !important
+  &__card
+    background-color: #7A97F8
+    width: 272px
+    height: 86px
+    padding-left: 20px
 
+
+    @media (max-width: 1900px)
+      width: 350px
+
+      &:nth-child(3), &:nth-child(4)
+        margin-top: 10px
+
+    @media (max-width: 1280px)
+      width: calc(50% - 5px)
+
+    @media (max-width: 590px)
+      width: 100%
+      &:nth-child(n)
+        margin-top: 0
+
+      &:not(:last-child)
+        margin-bottom: 10px
+
+
+
+    &:first-child
+      background-color: rgb(28, 72, 203)
+
+    &:nth-child(2)
+      background-color: #6482E9
+
+    &:nth-child(3)
+      background-color: #7B97F9
+
+    &:last-child
+      background-color: #65A1E9
+
+
+    &-img
+      background-color: rgba(255, 255, 255, 0.2)
+      width: 45px
+      height: 45px
+      margin-right: 25px
+
+    &-value
+      color: #fff
+
+    &-label
+      color: rgba(255, 255, 255, 0.6)
   
 
 
@@ -121,7 +170,7 @@
 
       @media (max-width: 590px)
         min-height: fit-content
-        max-height: fit-content
+        max-height: 400px
 
       &:first-child
         margin-bottom: 10px

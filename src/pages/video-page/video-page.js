@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import HeaderTop from "../../components/common/header-top/header-top";
 import Footer from "../../components/common/footer/footer";
 import scrollToTop from "../../hooks/scroll-to-top";
@@ -13,8 +13,10 @@ import Favorite from "../photo-page/components/favorite/Favorite";
 import Deleted from "../photo-page/components/deleted/Deleted";
 import Uploaded from "../photo-page/components/uploaded/Uploaded";
 import UploadNewVideo from "./components/upload-new-video/upload-new-video";
+import Navbar from "../../components/header/navbar/navbar";
 
 const VideoPage = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   scrollToTop();
   const favoriteHeaders = [
     "",
@@ -139,7 +141,8 @@ const VideoPage = () => {
     <div>
       <div className="video__header">
         <div className="container1">
-          <HeaderTop />
+        <HeaderTop open={() => setMenuOpen(true)}/>
+        <Navbar className={ menuOpen ? "header__navbar_show" : "header__navbar_hidden"}  close={() => setMenuOpen(false)} />
         </div>
       </div>
       <div className="container1 video__container">

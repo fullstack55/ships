@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import HeaderTop from "../../components/common/header-top/header-top";
 import Footer from "../../components/common/footer/footer";
 import scrollToTop from "../../hooks/scroll-to-top";
@@ -13,15 +13,18 @@ import SearchMessages from "./components/searchMessages/searchMessages";
 import Inbox from "./components/inbox/inbox";
 import ManageLabels from "./components/manage-labels/manage-labels";
 import NewMessage from "./components/new-message/new-message";
+import Navbar from "../../components/header/navbar/navbar";
 
 const MessagesPage = () => {
   scrollToTop();
 
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="container2">
       <div className="messages__header">
         <div className="container1">
-          <HeaderTop />
+        <HeaderTop open={() => setMenuOpen(true)}/>
+        <Navbar className={ menuOpen ? "header__navbar_show" : "header__navbar_hidden"}  close={() => setMenuOpen(false)} />
         </div>
       </div>
       <div className="container1 messages__container">

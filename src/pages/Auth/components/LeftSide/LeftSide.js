@@ -9,9 +9,11 @@ const LeftSide = () => {
       <div>
         <img src={logo} alt="logo" />
       </div>
+      <h2>SHIPSPOTTING.COM</h2>
       <h6>
-        Shipspoting lets you share your best photos and videos with millions
-        enthusiasts.
+        Shipspoting lets you share your best photos and videos
+        <br />
+          with millions enthusiasts
       </h6>
       <Socials className="LeftSide__social" />
     </div>

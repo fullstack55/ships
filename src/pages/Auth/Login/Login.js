@@ -20,10 +20,10 @@ const Login = () => {
 
   return (
     <Row className="Login" noGutters>
-      <Col lg={4} md={6} sm={12}>
+      <Col lg={5} md={7} xs={12}>
         <LeftSide />
       </Col>
-      <Col lg={8} md={6} sm={12} className="d-flex justify-content-center">
+      <Col lg={7} md={5} xs={12} className="d-flex justify-content-center">
         <div className="Login__inputbox text-center">
           <h4>Login</h4>
 

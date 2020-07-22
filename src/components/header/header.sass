@@ -16,6 +16,15 @@
     &_hidden
       @media (min-width: 1900px)
         display: none
+    &_show
+      @media (max-width: 1280px)
+        display: grid
+        position: fixed
+        top: 0px
+        right: 0px
+        width: 100%
+        z-index: 10000
+        background-color: #0e2051
 
     &_xl
       width: 870px
@@ -35,8 +44,45 @@
     justify-content: space-between
     align-items: center
     padding: 0 1px
+
     @media (max-width: 1280px)
-      display: none
+      > img
+        display: none
+      .header__links
+        display: none
+    
+    .header__links_show
+      display: block
+      position: fixed
+      width: 70%
+      left: 15%
+      top: 0
+      z-index: 10000
+      @media (max-width: 590px)
+        width: 100%
+        left: 0
+        //padding: 0 5%
+      > p
+        display: flex
+        background-color: #181819
+        color: #ffa535
+        align-items: center
+        justify-content: center
+        height: 80px
+        font-family: "Montserrat ExtraBold", sans-serif
+        margin: 0
+      > div
+        display: flex
+        width: 100%
+        height: 100px
+        padding: 0 50px
+        background-color: #0e2051
+        justify-content: space-between
+        align-items: center
+        @media (max-width: 590px)
+          padding: 0 5%
+
+
     @media (min-width: 1900px)
       justify-content: normal
 
@@ -69,15 +115,18 @@
       height: 16px
       width: 16px
 
-  &__links
-    display: flex
-    align-items: center
-    width: 270px
-    margin-right: -20px
-    justify-content: space-between
+  &__links 
+    > p
+      display: none
+    > div
+      display: flex
+      align-items: center
+      width: 270px
+      margin-right: -20px
+      justify-content: space-between
 
-    @media (min-width: 1900px)
-      margin-left: auto
+      @media (min-width: 1900px)
+        margin-left: auto
 
   &__username
     color: #fff
@@ -327,7 +376,4 @@
 
       &-text-2
         display: none
-
-
-
 

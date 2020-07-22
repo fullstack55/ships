@@ -4,9 +4,11 @@ import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 import NavList from "../../common/nav-list/nav-list";
 
-const Navbar = ({ className }) => {
+const Navbar = ({ className, close }) => {
+
   return (
     <nav className={`nav1 ${className}`}>
+      <button className="header__top-button navbar1-menu__top-button"  onClick={close}/>
       <ul className="navbar1-menu">
         <li className="navbar1-menu__item">
           <NavLink
@@ -104,12 +106,18 @@ const Navbar = ({ className }) => {
           </NavLink>
         </li>
       </ul>
+      <div className="socials navbar1-menu__socials undefined">
+        <a className="socials__link socials__link_fb" href="#"></a>
+        <a className="socials__link socials__link_twitter" href="#"></a>
+        <a className="socials__link socials__link_youtobe" href="#"></a>
+      </div>
     </nav>
   );
 };
 
 Navbar.propTypes = {
   className: PropTypes.string,
+  close: PropTypes.func,
 };
 
 export default Navbar;

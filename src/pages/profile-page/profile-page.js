@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import HeaderTop from "../../components/common/header-top/header-top";
 import Footer from "../../components/common/footer/footer";
 import scrollToTop from "../../hooks/scroll-to-top";
@@ -21,12 +21,13 @@ import Navbar from "../../components/header/navbar/navbar";
 const ProfilePage = () => {
   scrollToTop();
 
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div>
       <div className="profile__header">
         <div className="container1">
-          <HeaderTop />
-          <Navbar className="header__navbar_hidden" />
+        <HeaderTop open={() => setMenuOpen(true)}/>
+        <Navbar className={ menuOpen ? "header__navbar_show" : "header__navbar_hidden"}  close={() => setMenuOpen(false)} />
         </div>
       </div>
       <div className="container1 profile__container">
